@@ -1,8 +1,8 @@
-# Picxp
+# Instgarm Clone
 
 ### Live site
 
-[Personal-Blog](https://picxp.herokuapp.com/)
+[Personal-Blog](https://mohasgram.herokuapp.com/)
 
 
 #### Built by
@@ -11,52 +11,59 @@
 
 ## Description
 
-This is a Django application for personal gallery that allows a user to upload images 
+This is a Django application that works in a similar way to Instagram.
 
 ## User Story
 
-* View different photos that interest them  
-* Click a single image to expand it and view the details of that photo  
-* Search for different categories   
-* Copy a link to the photo to share with my friends.  
-* View photos based on the location they were taken.  
+* Sign in to the application to start using.
+* Upload pictures to the application.
+* See profile with all pictures.
+* Follow other users and see their pictures on timeline.
+* Like a picture and leave a comment on it.
 
 
-## Setup/Installation Requirements
-
-* python3.8
-* pip
-* virtualenv
-
-## Cloning
-* In your terminal:
-
-  $ git clone https://github.com/aenshtyn/Pixp/
-
-  $ cd Personal-Blog
-
-## Running the Application
-* Creating the virtual environment
-
-        $ python3.8 -m venv --without-pip virtual
-        $ source virtual/bin/env
-        $ curl https://bootstrap.pypa.io/get-pip.py | python
-
-* Installing Flask and other Modules
-
-        $ python3.8 -m pip install Flask
-        $ python3.8 -m pip install Flask-Bootstrap
-        $ python3.8 -m pip install Flask-Script
-
-* To run the application, in your terminal:
-
-        python3.8 manage.py runserver
-
-## Testing the Application
-
-* To run the tests for the class files:
-
-        $ python3.8 manage.py test
+## Setup and Installation  
+To get the project .......  
+  
+##### Cloning the repository:  
+ ```bash 
+https://github.com/aenshtyn/instagram.git 
+```
+##### Navigate into the folder and install requirements  
+ ```bash 
+cd instagram pip install -r requirements.txt 
+```
+##### Install and activate Virtual  
+ ```bash 
+- python3 -m venv virtual - source virtual/bin/activate  
+```  
+##### Install Dependencies  
+ ```bash 
+ pip install -r requirements.txt 
+```  
+ ##### Setup Database  
+  SetUp your database User,Password, Host then make migrate  
+ ```bash 
+python manage.py makemigrations instagram 
+ ``` 
+ Now Migrate  
+ ```bash 
+ python manage.py migrate 
+```
+##### Run the application  
+ ```bash 
+ python manage.py runserver 
+``` 
+##### Running the application  
+ ```bash 
+ python manage.py server 
+```
+##### Testing the application  
+ ```bash 
+ python manage.py test 
+```
+Open the application on your browser `127.0.0.1:8000`.  
+  
 
 ## Technologies Used
 
@@ -67,6 +74,9 @@ This is a Django application for personal gallery that allows a user to upload i
 * Git Version Control
 * Postgresql
 * Django
+
+## Known Bugs  
+* Still working on the App... Still has some bugs to be cleared
 
 ## Support and contact details
 
