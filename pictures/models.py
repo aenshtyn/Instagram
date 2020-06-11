@@ -17,8 +17,8 @@ class Image(models.Model):
     name = models.CharField(max_length =30)
     caption = models.TextField()
     # profile = models.ForeignKey(Profile)
-    # likes = models.
-    # comments = models.
+    likes = models.ForeignKey(User,on_delete=models.CASCADE)
+    comments = models.ForeignKey(User,on_delete=models.CASCADE)
     pub_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
