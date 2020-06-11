@@ -6,14 +6,20 @@
   <meta charset="utf-8">
 
   {% if title %}
-  <title>Moringa Tribune - {{title}}</title>
+  <title>Instagram - {{title}}</title>
   {% else %}
-    <title> Moringa Tribune </title>
+    <title> Instagram </title>
   {% endif %}
 
   {% block styles %}
     {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+ 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="  https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/united/bootstrap.min.css   ">
+
   {% endblock %}
 
 </head>
