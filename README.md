@@ -1,4 +1,4 @@
-# Instgarm Clone
+# Instagram Clone
 
 ### Live site
 
