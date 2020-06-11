@@ -5,7 +5,7 @@ class Profile(models.Model):
     first_name = models.CharField(max_length =30)
     last_name = models.CharField(max_length =30)
     email = models.EmailField()
-    password = models.PasswordField()
+    # password = models.PasswordField()
     picture = models.ImageField()
     bio = models.TextField()
 
@@ -14,14 +14,19 @@ class Profile(models.Model):
 
 class Image(models.Model):
     image = models.ImageField()
-    name = models.CharField()
-    caption = models.CharField()
-    profile = models.Foreignkey(Profile)
-    likes = models.
-    comments = models.
+    name = models.CharField(max_length =30)
+    caption = models.TextField()
+    # profile = models.ForeignKey(Profile)
+    # likes = models.
+    # comments = models.
     pub_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.image
     class Meta:
         ordering = ['pub_date']
+
+    @classmethod
+    def all_images(cls):
+        images =  Image.objects.all()
+        return images
