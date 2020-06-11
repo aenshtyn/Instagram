@@ -2,7 +2,7 @@
 
 ### Live site
 
-[Personal-Blog](https://mohasgram.herokuapp.com/)
+[Instagram-Clone](https://mohasgram.herokuapp.com/)
 
 
 #### Built by
