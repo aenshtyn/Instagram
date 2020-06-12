@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  {%if title%}
-
-  <title>{{title}}</title>
-
-  {%endif%}
+  {% if title %}
+  <title>Instagram Login- {{title}}</title>
+  {% else %}
+    <title> Instagram Login </title>
+  {% endif %}
 
   {% block styles %}
     {% bootstrap_css %}
